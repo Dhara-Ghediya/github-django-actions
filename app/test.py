@@ -20,7 +20,7 @@ class UserRegistrationTest(TestCase):
         }
 
         # Simulate a POST request to the userRegistration view
-        response = self.client.post(reverse('userRegistration'), data)
+        response = self.client.post(reverse('user_register'), data)
 
         # Assert that the response is a JSON response with status code 200
         self.assertEqual(response.status_code, 200)

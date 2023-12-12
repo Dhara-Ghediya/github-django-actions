@@ -37,4 +37,5 @@ def userRegistration(request):
             messages.warning(request, "Entered Mobile number not have 10 digits!")
                 
         
-    return JsonResponse({'success': "False"}, status=300)
+    return render(request, 'UserRegister.html')
+    # return JsonResponse({'success': "False"}, status=300)

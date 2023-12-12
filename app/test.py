@@ -1,7 +1,7 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.messages import get_messages
-from your_app.models import UserModel  # Replace 'your_app' with the actual app name
+from .models import UserModel  # Replace 'your_app' with the actual app name
 
 class UserRegistrationTest(TestCase):
     def setUp(self):

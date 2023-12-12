@@ -19,7 +19,7 @@ class UserRegistrationTest(TestCase):
         }
 
         # Simulate a POST request to the userRegistration view
-        response = self.client.post(reverse('userRegistration'), data)
+        response = self.client.post('userRegistration', data)
 
         # Assert that the response is a redirect (status code 302)
         self.assertEqual(response.status_code, 302)

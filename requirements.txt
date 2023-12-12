@@ -1,7 +1,7 @@
-asgiref==3.7.2
-Django==5.0
-gunicorn==21.2.0
-packaging==23.2
-psycopg2-binary==2.9.9
-pycodestyle==2.11.1
-sqlparse==0.4.4
+asgiref
+Django
+gunicorn
+packaging
+psycopg2-binary
+pycodestyle
+sqlparse

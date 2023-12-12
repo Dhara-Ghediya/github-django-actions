@@ -1,0 +1,4 @@
+gitActionsEnv
+.env 
+__pycache__
+migrations

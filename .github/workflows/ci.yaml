@@ -1,4 +1,4 @@
-name: Django Runserver
+name: Django Function Tests
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
       - develop
 
 jobs:
-  runserver:
-    runs-on: macOs-latest
+  test:
+    runs-on: macOS-latest
 
     steps:
     - name: Checkout repository
@@ -24,5 +24,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # Adjust the path to your requirements file
 
-    - name: Run Django runserver
-      run: python manage.py runserver
+    - name: Run Django tests
+      run: |
+        python manage.py test  # Adjust the test command as needed

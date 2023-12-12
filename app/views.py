@@ -12,6 +12,7 @@ def home(request):
 # Create your views here.
 def userRegistration(request):
     if request.method == 'POST':
+        
         uname = request.POST.get('username')
         password = request.POST.get('password')
         fname = request.POST.get('firstname')
@@ -27,6 +28,7 @@ def userRegistration(request):
             # else:
             register = UserModel(username=uname, password=password, first_name=fname, last_name=lname, address=address, phone_no=phone, email_id=email)
             try:
+                print(hello)
                 register.save()
                 messages.success(request, "Register Successfully! Now, You have to login...")
                 # return redirect('home')
@@ -36,6 +38,4 @@ def userRegistration(request):
         else:
             messages.warning(request, "Entered Mobile number not have 10 digits!")
                 
-        
-    return render(request, 'UserRegister.html')
-    # return JsonResponse({'success': "False"}, status=300)
+    return JsonResponse({'success': "False"}, status=300)

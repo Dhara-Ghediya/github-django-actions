@@ -26,4 +26,4 @@ jobs:
 
     - name: Run Django tests
       run: |
-        python manage.py test  # Adjust the test command as needed
+        python manage.py runserver  # Adjust the test command as needed

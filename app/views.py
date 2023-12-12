@@ -5,6 +5,10 @@ from django.contrib import messages
 from .models import UserModel
 from django.http import HttpResponse,JsonResponse
 
+
+def home(request):
+    return render(request, 'home.html')
+
 # Create your views here.
 def userRegistration(request):
     if request.method == 'POST':

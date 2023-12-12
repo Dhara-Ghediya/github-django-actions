@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main  # Adjust the branch name as needed
-      -develop
+      - develop
 
 jobs:
   test:

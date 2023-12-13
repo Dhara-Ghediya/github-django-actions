@@ -28,7 +28,7 @@ def userRegistration(request):
             # else:
             register = UserModel(username=uname, password=password, first_name=fname, last_name=lname, address=address, phone_no=phone, email_id=email)
             try:
-                print(hello)
+                # print(hello)
                 register.save()
                 messages.success(request, "Register Successfully! Now, You have to login...")
                 # return redirect('home')
